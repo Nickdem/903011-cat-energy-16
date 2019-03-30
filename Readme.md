@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Никита Демидов](https://up.htmlacademy.ru/adaptive/16/user/903011).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Пасунько] (https://htmlacademy.ru/profile/id702351).
 
 ---
 
