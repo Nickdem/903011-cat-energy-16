@@ -1,14 +1,19 @@
 .main-block {
   border: 1px solid red;
-  padding-bottom: 20px;
+  position: relative;
 }
 
 .main-block__background {
+  position: relative;
+  min-height: 305px;
+  padding-top: 29px;
+  margin-bottom: 135px;
   background-color: #65a93c;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
+  text-align: center;
 }
 
 .main-block__answer {
@@ -16,6 +21,14 @@
   line-height: 14px;
   margin: 0;
   color: @main-white;
+}
+
+.main-block__image {
+  position: absolute;
+  top: 165px;
+  left: 20px;
+  width: 280px;
+  height: 270px;
 }
 
 .main-block__button {
