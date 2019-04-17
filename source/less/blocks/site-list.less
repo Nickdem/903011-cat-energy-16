@@ -12,3 +12,36 @@
   padding-bottom: 24px;
   color: inherit;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: @main-black;
+  }
+
+  .site-list__item {
+    margin-right: 35px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .site-list__link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    font-size: 20px;
+    color: @main-white;
+  }
+
+}

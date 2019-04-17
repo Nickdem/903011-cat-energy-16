@@ -20,3 +20,63 @@
   font-family: @secondFont;
   margin-left: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .instruction__title {
+    .indents-tablet();
+    margin-bottom: 75px;
+  }
+
+  .instruction__list {
+    display: flex;
+    flex-wrap: wrap;
+    .indents-tablet();
+  }
+
+  .instruction__item {
+    width: 324px;
+    padding-left: 0;
+    padding-top: 115px;
+    margin-bottom: 140px;
+    margin-right: 60px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .instruction__text {
+    position: relative;
+    z-index: 2;
+    width: 270px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .instruction__item {
+    width: 245px;
+    margin-bottom: 90px;
+    margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .instruction__list {
+    .indents-desktop();
+  }
+
+  .instruction__title {
+    .indents-desktop();
+    margin-bottom: 80px;
+  }
+}

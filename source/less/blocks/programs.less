@@ -12,3 +12,26 @@
 .programs__block-wrapper {
   display: flex;
 }
+
+@media (min-width: @tablet-width) {
+  .programs {
+    .indents-tablet();
+  }
+
+  .programs__block {
+    padding: 81px 55px 62px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs {
+    display: flex;
+    justify-content: space-between;
+    .indents-desktop();
+  }
+
+  .programs__block {
+    width: 570px;
+    padding: 81px 56px 62px 52px;
+  }
+}

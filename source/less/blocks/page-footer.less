@@ -11,3 +11,19 @@
   width: 128px;
   height: 24px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    .indents-tablet();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 67px 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding: 62px 40px;
+  }
+}

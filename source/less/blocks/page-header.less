@@ -20,3 +20,37 @@
   width: 191px;
   height: 39px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    .indents-tablet();
+    padding-top: 24px;
+  }
+
+  .page-header__wrapper {
+    padding: 0;
+    width: 173px;
+    border: none;
+  }
+
+  .page-header__logo-image {
+    width: 173px;
+    height: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    .indents-desktop();
+    padding-top: 54px;
+  }
+
+  .page-header__wrapper {
+    width: 202px;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
+  }
+}
