@@ -7,7 +7,7 @@
   margin-bottom: 25px;
 }
 
-.show-more__title{
+.show-more__title {
   font-family: @mainFont;
   font-size: 16px;
   line-height: 20px;
@@ -26,4 +26,30 @@
 .show-more__button {
   color: @main-black;
   background-color: @main-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .show-more {
+    background-color: @main-white;
+    border: 1px solid @main-grey;
+  }
+
+  .show-more__image {
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .show-more__title {
+    padding: 0 35px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .show-more__text {
+    padding: 0 35px;
+    font-size: 16px;
+    line-height: auto;
+    margin-bottom: 85px;
+  }
 }
