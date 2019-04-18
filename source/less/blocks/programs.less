@@ -1,21 +1,26 @@
 .programs {
-  padding: 0 20px;
   border: 1px solid orange;
+  max-width: 320px;
 }
 
 .programs__block {
   background-color: @main-grey;
-  padding: 20px;
+  margin: 0 20px;
+  padding: 25px 0 23px 20px;
   margin-bottom: 20px;
+  width: 260px;
 }
 
 .programs__block-wrapper {
   display: flex;
+  margin-bottom: 25px;
+  width: 237px;
 }
 
 @media (min-width: @tablet-width) {
   .programs {
     .indents-tablet();
+    max-width: 768px;
   }
 
   .programs__block {
@@ -27,6 +32,7 @@
   .programs {
     display: flex;
     justify-content: space-between;
+    max-width: 1440px;
     .indents-desktop();
   }
 
