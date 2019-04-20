@@ -60,11 +60,23 @@
 
 @media (min-width: @desktop-width) {
   .program__title {
-    padding-left: 165px;
-    margin-bottom: 80px;
+    margin-left: 64px;
+    margin-top: 35px;
+  }
+
+  .program__image {
+    .reset-indents();
+    width: 100px;
+    height: 100px;
   }
 
   .program__text {
-    width: 100%;
+    .reset-indents();
+    padding: 0;
+  }
+
+  .program__link-wrapper {
+    .reset-indents();
+    margin-top: 38px;
   }
 }

@@ -83,12 +83,26 @@
 
 @media (min-width: @desktop-width) {
   .instruction {
+    padding: 0;
+    .indents-desktop();
     max-width: 1440px;
   }
 
+  .instruction__title {
+    .reset-indents();
+    padding: 0;
+    margin-bottom: 65px;
+  }
+
+  .instruction__list {
+    justify-content: space-between;
+  }
+
   .instruction__item {
+    .reset-indents();
+    padding: 0;
     width: 245px;
-    margin-bottom: 90px;
+    margin-bottom: 77px;
     margin-right: 80px;
 
     &:nth-child(2n) {
@@ -98,14 +112,5 @@
     &:nth-child(4n) {
       margin-right: 0;
     }
-  }
-
-  .instruction__list {
-    .indents-desktop();
-  }
-
-  .instruction__title {
-    .indents-desktop();
-    margin-bottom: 80px;
   }
 }
