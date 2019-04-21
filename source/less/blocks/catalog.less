@@ -37,6 +37,9 @@
 .catalog__product-name {
   margin-bottom: 10px;
   width: 74px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 .catalog__product-volume,
@@ -62,12 +65,13 @@
   }
 
   .catalog__title {
+    .reset-indents();
     text-align: left;
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
-    padding-top: 65px;
-    padding-bottom: 74px;
+    margin-top: 65px;
+    margin-bottom: 90px;
   }
 
   .catalog__wrapper {
@@ -77,12 +81,17 @@
   }
 
   .catalog__product {
+    padding: 0;
     width: 324px;
     max-height: 431px;
     margin-top: 70px;
     margin-bottom: 70px;
     background-color: @main-grey;
     border: none;
+
+    &:first-child {
+      border-top: none;
+    }
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -92,22 +101,24 @@
   .catalog__product-image {
     width: 195px;
     height: 208px;
-    margin-left: 64px;
+    margin-left: 25px;
     margin-top: -82px;
   }
 
   .catalog__product-wrapper {
     flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
+    margin: 0 39px;
+    width: 250px;
   }
 
   .catalog__product-name {
     margin: 0 auto;
-    margin-top: 54px;
-    margin-bottom: 23px;
+    margin-top: 39px;
+    margin-bottom: 29px;
     width: 124px;
     font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
     text-align: center;
   }
 
@@ -129,22 +140,70 @@
     font-size: 16px;
     line-height: 16px;
   }
+
+  .catalog__product-order {
+    margin: 0 39px;
+    margin-bottom: 40px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .catalog {
     .indents-desktop();
+    max-width: 1440px;
+  }
+
+  .catalog__wrapper {
+    justify-content: normal;
+  }
+
+  .catalog__product-image {
+    width: 195px;
+    height: 208px;
+    .reset-indents();
+    margin-top: -81px;
+    margin-left: -9px;
+  }
+
+  .catalog__product-wrapper {
+    .reset-indents();
+    width: 169px;
+    margin: 0 38px;
   }
 
   .catalog__title {
+    .reset-indents();
     text-align: left;
     padding-top: 83px;
     padding-bottom: 75px;
   }
 
   .catalog__product {
+    .reset-indents();
     width: 245px;
-    margin-right: 80px;
-    margin-bottom: 140px;
+    margin: 70px 79px 70px 0;
+
+    &:nth-child(2n) {
+      margin-right: 79px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .catalog__product-name {
+    .reset-indents();
+    margin: 38px 22px 30px 22px;
+  }
+
+  .catalog__product-feature {
+    .reset-indents();
+    margin-bottom: 33px;
+  }
+
+  .catalog__product-order {
+    .reset-indents();
+    margin: 0 38px 40px 38px;
   }
 }
