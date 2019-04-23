@@ -1,25 +1,135 @@
 .main-block {
   border: 1px solid red;
-  padding-bottom: 20px;
+  position: relative;
+  max-width: 320px;
 }
 
 .main-block__background {
+  position: relative;
+  min-height: 305px;
+  padding-top: 29px;
+  margin-bottom: 135px;
   background-color: #65a93c;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
+  text-align: center;
+}
+
+.main-block__title {
+  .reset-indents();
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 23px;
+  color: @main-white;
 }
 
 .main-block__answer {
+  .reset-indents();
   font-size: 14px;
   line-height: 14px;
   margin: 0;
   color: @main-white;
 }
 
+.main-block__image {
+  position: absolute;
+  top: 170px;
+  left: 20px;
+  width: 280px;
+  height: 270px;
+}
+
 .main-block__button {
-  margin: 0 20px;
+  margin: 0 20px 22px 20px;
   color: @main-white;
   background-color: @main-green;
+}
+
+@media (min-width: @tablet-width) {
+  .main-block {
+    .indents-tablet();
+    max-width: 768px;
+  }
+
+  .main-block__background {
+    padding-top: 70px;
+    padding-left: 90px;
+    margin-bottom: -50px;
+    color: @main-black;
+    background: none;
+    text-align: left;
+  }
+
+  .main-block__title {
+    width: 427px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 50px;
+    color: @main-black;
+  }
+
+  .main-block__answer {
+    font-size: 20px;
+    line-height: 20px;
+    color: @main-black;
+  }
+
+  .main-block__image {
+    width: 709px;
+    height: 609px;
+    padding-top: 90px;
+    padding-left: 40px;
+  }
+
+  .main-block__button {
+    position: relative;
+    margin-left: 90px;
+    margin-bottom: 530px;
+    width: 244px;
+    font-size: 20px;
+    padding: 19px 27px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-block {
+    .indents-desktop();
+    max-width: 1440px;
+  }
+
+  .main-block__background {
+    padding-top: 110px;
+    padding-left: 80px;
+    width: 415px;
+  }
+
+  .main-block__desktop-background {
+    width: 720px;
+    height: 696px;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    margin-top: -535px;
+    margin-left: 610px;
+  }
+
+  .main-block__image {
+    .reset-indents();
+    padding: 0;
+    width: 552px;
+    height: 499px;
+    margin-left: 457px;
+    margin-top: -156px;
+  }
+
+  .main-block__button {
+    margin-left: 80px;
+    margin-bottom: 270px;
+    width: 244px;
+    margin-top: -210px;
+  }
 }

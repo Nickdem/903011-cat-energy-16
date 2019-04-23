@@ -1,0 +1,17 @@
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .reset-list();
+  width: 220px;
+  .reset-indents();
+  margin: 22px auto;
+  text-align: center;
+}
+
+@media (min-width: @desktop-width) {
+  .social__list {
+    .reset-indents();
+    padding: 0;
+  }
+}

@@ -1,0 +1,35 @@
+.copyright {
+  padding-top: 31px;
+  padding-bottom: 22px;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__name {
+  width: 115px;
+  font-family: @secondFont;
+  font-size: 16px;
+  line-height: 16px;
+  color: @main-black;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    padding: 58px 0;
+  }
+
+  .copyright__name {
+    margin-right: 23px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    padding: 0;
+    .reset-indents();
+  }
+}
