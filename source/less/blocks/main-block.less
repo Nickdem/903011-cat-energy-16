@@ -1,13 +1,11 @@
 .main-block {
-  border: 1px solid red;
   position: relative;
   max-width: 320px;
 }
 
 .main-block__background {
   position: relative;
-  min-height: 305px;
-  padding-top: 29px;
+  height: 305px;
   margin-bottom: 135px;
   background-color: #65a93c;
   background-image: url("../img/index-background-mobile@1x.jpg");
@@ -22,7 +20,8 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  margin-bottom: 23px;
+  padding-top: 27px;
+  margin-bottom: 25px;
   color: @main-white;
 }
 
@@ -30,13 +29,15 @@
   .reset-indents();
   font-size: 14px;
   line-height: 14px;
-  margin: 0;
+  .reset-indents();
+  font-weight: 400;
   color: @main-white;
+  text-transform: uppercase;
 }
 
 .main-block__image {
   position: absolute;
-  top: 170px;
+  top: 167px;
   left: 20px;
   width: 280px;
   height: 270px;
@@ -44,6 +45,9 @@
 
 .main-block__button {
   margin: 0 20px 22px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
   color: @main-white;
   background-color: @main-green;
 }
