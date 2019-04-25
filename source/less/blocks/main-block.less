@@ -56,18 +56,30 @@
   .main-block {
     .indents-tablet();
     max-width: 768px;
+    margin-bottom: 48px;
   }
 
   .main-block__background {
+    .reset-indents();
     padding-top: 70px;
     padding-left: 90px;
-    margin-bottom: -50px;
     color: @main-black;
     background: none;
     text-align: left;
+    height: 225px;
+    margin-bottom: 20px;
+  }
+
+  .main-block__tablet-background {
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat;
+    width: 709px;
+    height: 609px;
+    margin-top: -108px;
+    margin-left: 20px;
   }
 
   .main-block__title {
+    padding: 0;
     width: 427px;
     font-size: 60px;
     line-height: 60px;
@@ -82,19 +94,15 @@
   }
 
   .main-block__image {
-    width: 709px;
-    height: 609px;
-    padding-top: 90px;
-    padding-left: 40px;
+    display: none;
   }
 
   .main-block__button {
     position: relative;
     margin-left: 90px;
-    margin-bottom: 530px;
     width: 244px;
     font-size: 20px;
-    padding: 19px 27px;
+    padding: 18px 10px;
   }
 }
 
