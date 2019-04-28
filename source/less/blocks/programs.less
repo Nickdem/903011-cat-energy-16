@@ -24,6 +24,10 @@
     margin: 0 30px 30px 30px;
     padding: 75px 62px 60px 52px;
     width: 594px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .programs__block-wrapper {
@@ -36,19 +40,17 @@
 @media (min-width: @desktop-width) {
   .programs {
     display: flex;
-    justify-content: space-between;
     max-width: 1440px;
-    .indents-desktop();
   }
 
   .programs__block {
     width: 570px;
-    padding: 47px 52px 62px 52px;
-    margin-right: 80px;
+    margin: 0 80px 0 110px;
+    padding: 0;
 
     &:nth-child(2n) {
       margin-right: 0;
-      height: 264px;
+      margin-left: 0;
     }
   }
 
