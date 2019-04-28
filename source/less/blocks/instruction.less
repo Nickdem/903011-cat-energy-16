@@ -70,20 +70,20 @@
 
 @media (min-width: @tablet-width) {
   .instruction {
-    .indents-tablet();
     max-width: 768px;
+    border: @border;
     border-bottom: @border;
   }
 
   .instruction__title {
-    .reset-indents();
+    padding: 25px 30px 2px 30px;
+    margin: 0;
     font-size: 60px;
     line-height: 60px;
-    padding-top: 40px;
-    margin-bottom: 9px;
   }
 
   .instruction__list {
+    .indents-tablet();
     display: flex;
     flex-wrap: wrap;
     .reset-indents();
@@ -93,8 +93,8 @@
     width: 250px;
     padding-left: 0;
     padding-top: 70px;
-    margin-bottom: 80px;
-    margin-right: 165px;
+    margin-bottom: 65px;
+    margin-right: 135px;
     flex-direction: column;
 
     &:nth-child(2n) {
@@ -115,7 +115,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 25px;
+      top: 95px;
       left: 25px;
     }
   }
@@ -126,7 +126,7 @@
     font-size: 16px;
     line-height: 24px;
     padding-left: 0;
-    padding-top: 120px;
+    padding-top: 110px;
   }
 }
 

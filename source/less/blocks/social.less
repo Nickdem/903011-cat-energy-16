@@ -21,6 +21,41 @@
   padding-right: 15px;
 }
 
+@media (min-width: @tablet-width) {
+  .social__list {
+    margin-top: 0;
+  }
+
+  .social__image {
+    display: none;
+  }
+
+  .social__link {
+    position: absolute;
+
+    &--vkontakte {
+      background: url("../../img/icon-vk.svg") no-repeat;
+      width: 30px;
+      height: 16px;
+      margin: 0 10px;
+    }
+
+    &--instagram {
+      background: url("../../img/icon-insta.svg") no-repeat;
+      width: 23px;
+      height: 23px;
+      margin: 0 8px;
+    }
+
+    &--facebook {
+      background: url("../../img/icon-fb.svg") no-repeat;
+      width: 14px;
+      height: 28px;
+      margin-top: -4px;
+    }
+  }
+}
+
 @media (min-width: @desktop-width) {
   .social__list {
     .reset-indents();

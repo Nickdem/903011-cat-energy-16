@@ -63,24 +63,23 @@
 
 @media (min-width: @tablet-width) {
   .catalog {
-    .indents-tablet();
     max-width: 768px;
+    border: @border;
   }
 
   .catalog__title {
-    .reset-indents();
     text-align: left;
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
-    margin-top: 65px;
-    margin-bottom: 90px;
+    margin: 55px 0 95px 30px;
   }
 
   .catalog__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 30px;
   }
 
   .catalog__product {
@@ -115,10 +114,8 @@
   }
 
   .catalog__product-name {
-    margin: 0 auto;
-    margin-top: 39px;
-    margin-bottom: 29px;
-    width: 124px;
+    margin: 38px auto 20px;
+    width: 145px;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
@@ -127,7 +124,7 @@
 
   .catalog__product-feature {
     padding: 0;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
     width: 100%;
   }
 
@@ -135,7 +132,7 @@
   .catalog__product-flawor,
   .catalog__product-price {
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     border-bottom: @border;
   }
 
