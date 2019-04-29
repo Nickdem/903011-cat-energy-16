@@ -19,6 +19,7 @@
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     font-size: 18px;
     font-weight: 400;
@@ -28,15 +29,7 @@
   .site-list__item {
     border: none;
     padding: 10px 0;
-
-    &:first-child {
-      margin-left: 30px;
-      margin-right: 35px;
-    }
-
-    &:nth-child(2) {
-      margin-right: 35px;
-    }
+    margin-right: 35px;
 
     &:nth-child(3n) {
       margin-right: 0;
@@ -57,17 +50,10 @@
   .site-list {
     font-size: 20px;
     color: @main-white;
+    padding-top: 25px;
 
     &--modified {
       color: @main-black;
     }
-  }
-
-  .site-list__item:nth-child(1) {
-    margin-right: 35px;
-  }
-
-  .site-list__item:nth-child(2) {
-    margin-right: 35px;
   }
 }
