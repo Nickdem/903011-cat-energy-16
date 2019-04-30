@@ -4,9 +4,8 @@
 
 .programs__block {
   background-color: @main-grey;
-  margin: 0 20px;
+  margin: 0 20px 20px;
   padding: 25px 0 20px 20px;
-  margin-bottom: 20px;
   width: 260px;
 
   &:last-child {
@@ -21,7 +20,7 @@
   }
 
   .programs__block {
-    margin: 0 30px 30px 30px;
+    margin: 0 30px 30px;
     padding: 75px 62px 60px 52px;
     width: 594px;
 
@@ -40,6 +39,7 @@
 @media (min-width: @desktop-width) {
   .programs {
     display: flex;
+    flex-wrap: wrap;
     max-width: 1440px;
   }
 

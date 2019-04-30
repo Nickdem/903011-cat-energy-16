@@ -3,14 +3,14 @@
 }
 
 .catalog__title {
-  margin: 15px 20px 28px 20px;
+  margin: 15px 20px 28px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
 }
 
 .catalog__product {
-  padding: 0 20px 24px 20px;
+  padding: 0 20px 24px;
   border-top: @border;
   border-left: @border;
   border-right: @border;
@@ -45,6 +45,7 @@
 .catalog__product-price {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .catalog__product-order {
@@ -85,8 +86,7 @@
   .catalog__product {
     padding: 0;
     width: 324px;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin: 70px 0;
     background-color: @main-grey;
     border: none;
 
@@ -130,8 +130,7 @@
   .catalog__product-volume,
   .catalog__product-flawor,
   .catalog__product-price {
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding: 5px 0 10px;
     border-bottom: @border;
   }
 
@@ -141,8 +140,7 @@
   }
 
   .catalog__product-order {
-    margin: 0 39px;
-    margin-bottom: 40px;
+    margin: 0 39px 40px;
   }
 }
 
@@ -192,12 +190,11 @@
   .catalog__product-name {
     .reset-indents();
     width: 130px;
-    margin: 38px 22px 23px 22px;
+    margin: 38px 22px 23px;
   }
 
   .catalog__product-feature {
-    .reset-indents();
-    margin-bottom: 33px;
+    margin: 0 0 33px;
   }
 
   .catalog__product-volume,
@@ -209,6 +206,6 @@
 
   .catalog__product-order {
     .reset-indents();
-    margin: 3px 38px 40px 38px;
+    margin: 3px 38px 40px;
   }
 }
