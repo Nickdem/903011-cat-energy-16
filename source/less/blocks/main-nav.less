@@ -4,7 +4,12 @@
 }
 
 .main-nav__toggle {
-  width: 25px;
+  width: 24px;
+  height: 18px;
+  margin-top: 12px;
+  background: url("../img/icon-mobile-menu.svg") no-repeat;
+  cursor: pointer;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -14,14 +19,17 @@
 
   .main-nav {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     width: 440px;
+    margin: 24px 0 0 30px;
+    .indents-tablet();
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav {
+    margin: 0 110px;
+    padding: 0;
     width: 480px;
     position: relative;
     z-index: 1;

@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  border: 1px solid green;
+  border: @border;
 }
 
 .page-header__wrapper {
@@ -12,7 +12,7 @@
   justify-content: space-between;
   width: 320px;
   border-bottom: @border;
-  padding: 11px 20px 17px 20px;
+  padding: 11px 20px 13px;
 }
 
 .page-header__logo {
@@ -21,24 +21,27 @@
 
 .page-header__logo-image {
   width: 193px;
-  height: 39px;
+  height: 38px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
-    .indents-tablet();
-    padding-top: 24px;
     max-width: 768px;
   }
 
   .page-header__wrapper {
-    padding: 0;
-    margin: 0;
     width: 173px;
     border: none;
+    .indents-tablet();
+    margin-top: 24px;
   }
 
   .page-header__logo-image {
+    display: none;
+  }
+
+  .page-header__logo {
+    background: url("/img/logo-tablet.svg") no-repeat;
     width: 173px;
     height: 58px;
   }
@@ -46,13 +49,19 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    .indents-desktop();
-    padding-top: 54px;
     max-width: 1440px;
+    padding-top: 30px;
   }
 
   .page-header__wrapper {
     width: 202px;
+    padding: 0 110px;
+  }
+
+  .page-header__logo {
+    background: url("/img/logo-desktop.svg") no-repeat;
+    width: 202px;
+    height: 59px;
   }
 
   .page-header__logo-image {

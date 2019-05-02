@@ -1,14 +1,12 @@
 .instruction {
-  border: 1px solid blue;
   max-width: 320px;
 }
 
 .instruction__title {
-  margin-bottom: 40px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  margin-left: 20px;
+  margin: 0 20px 28px;
 }
 
 .instruction__list {
@@ -17,37 +15,74 @@
 }
 
 .instruction__item {
-  display: flex;
-  margin-bottom: 20px;
-}
+  position: relative;
+  margin-bottom: 24px;
 
-.instruction__image {
-  width: 60px;
-  height: 60px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: @main-green;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-repeat: no-repeat;
+    background-position: -10px -10px;
+  }
+
+  &--leaf::after {
+    width: 26px;
+    height: 29px;
+    background-image: url("../../img/advantage-leaf@1x.png");
+  }
+
+  &--powder::after {
+    width: 29px;
+    height: 31px;
+    background-image: url("../../img/advantage-powder@1x.png");
+  }
+
+  &--dining::after {
+    width: 23px;
+    height: 30px;
+    background-image: url("../../img/advantage-dining@1x.png");
+  }
+
+  &--clock::after {
+    width: 26px;
+    height: 31px;
+    background-position: -10px -10px;
+    background-image: url("../../img/advantage-clock@1x.png");
+  }
 }
 
 .instruction__text {
   font-family: @secondFont;
-  margin-left: 20px;
+  padding-left: 80px;
+  padding-top: 2px;
 }
 
 @media (min-width: @tablet-width) {
   .instruction {
-    .indents-tablet();
     max-width: 768px;
+    border: @border;
     border-bottom: @border;
   }
 
   .instruction__title {
-    .reset-indents();
-  }
-
-  .instruction__image {
-    width: 80px;
-    height: 80px;
+    padding: 25px 30px 2px;
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .instruction__list {
+    .indents-tablet();
     display: flex;
     flex-wrap: wrap;
     .reset-indents();
@@ -55,10 +90,8 @@
 
   .instruction__item {
     width: 250px;
-    padding-left: 0;
-    padding-top: 70px;
-    margin-bottom: 70px;
-    margin-right: 136px;
+    padding: 70px 0 0;
+    margin: 0 135px 65px 0;
     flex-direction: column;
 
     &:nth-child(2n) {
@@ -68,6 +101,20 @@
     &:last-child {
       margin-bottom: 106px;
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 95px;
+      left: 25px;
+    }
   }
 
   .instruction__text {
@@ -75,31 +122,31 @@
     width: 250px;
     font-size: 16px;
     line-height: 24px;
-    margin-top: 37px;
     padding-left: 0;
-    padding-right: 0;
+    padding-top: 110px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .instruction {
     padding: 0;
-    .indents-desktop();
     max-width: 1440px;
   }
 
   .instruction__title {
-    .reset-indents();
     padding: 0;
-    margin-bottom: 65px;
+    margin: 75px 0 73px 110px;
+  }
+
+  .instruction__list {
+    padding: 0;
+    margin-left: 110px;
   }
 
   .instruction__item {
-    .reset-indents();
     padding: 0;
     width: 244px;
-    margin-bottom: 77px;
-    margin-right: 80px;
+    margin: 0 80px 77px 0;
 
     &:nth-child(2n) {
       margin-right: 80px;
@@ -107,6 +154,13 @@
 
     &:nth-child(4n) {
       margin-right: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 25px;
     }
   }
 }

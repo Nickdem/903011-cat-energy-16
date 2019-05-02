@@ -1,13 +1,11 @@
 .main-block {
-  border: 1px solid red;
   position: relative;
   max-width: 320px;
 }
 
 .main-block__background {
   position: relative;
-  min-height: 305px;
-  padding-top: 29px;
+  height: 305px;
   margin-bottom: 135px;
   background-color: #65a93c;
   background-image: url("../img/index-background-mobile@1x.jpg");
@@ -18,56 +16,69 @@
 }
 
 .main-block__title {
-  .reset-indents();
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  margin-bottom: 23px;
+  padding-top: 27px;
+  margin-bottom: 25px;
   color: @main-white;
 }
 
 .main-block__answer {
-  .reset-indents();
   font-size: 14px;
   line-height: 14px;
-  margin: 0;
+  font-weight: 400;
   color: @main-white;
+  text-transform: uppercase;
 }
 
 .main-block__image {
   position: absolute;
-  top: 170px;
+  top: 167px;
   left: 20px;
   width: 280px;
   height: 270px;
 }
 
 .main-block__button {
-  margin: 0 20px 22px 20px;
+  margin: 0 20px 22px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
   color: @main-white;
   background-color: @main-green;
 }
 
 @media (min-width: @tablet-width) {
   .main-block {
-    .indents-tablet();
     max-width: 768px;
+    margin-bottom: 48px;
+    border: @border;
   }
 
   .main-block__background {
-    padding-top: 70px;
-    padding-left: 90px;
-    margin-bottom: -50px;
+    padding-top: 55px;
+    padding-left: 115px;
     color: @main-black;
     background: none;
     text-align: left;
+    height: auto;
+    .reset-indents();
+  }
+
+  .main-block__tablet-background {
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat;
+    width: 709px;
+    height: 609px;
+    margin: -100px 0 0 30px;
   }
 
   .main-block__title {
+    padding: 0;
     width: 427px;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: @main-black;
   }
 
@@ -78,58 +89,65 @@
   }
 
   .main-block__image {
-    width: 709px;
-    height: 609px;
-    padding-top: 90px;
-    padding-left: 40px;
+    display: none;
+  }
+
+  .main-block__button-wrapper {
+    margin: 50px 0 0 100px;
   }
 
   .main-block__button {
     position: relative;
-    margin-left: 90px;
-    margin-bottom: 530px;
     width: 244px;
     font-size: 20px;
-    padding: 19px 27px;
+    padding: 16px 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-block {
-    .indents-desktop();
     max-width: 1440px;
+    padding-bottom: 135px;
   }
 
   .main-block__background {
-    padding-top: 110px;
-    padding-left: 80px;
+    padding-top: 105px;
+    padding-left: 191px;
     width: 415px;
   }
 
+  .main-block__title {
+    margin-bottom: 40px;
+  }
+
   .main-block__desktop-background {
+    position: absolute;
     width: 720px;
     height: 696px;
-    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: contain;
-    margin-top: -535px;
-    margin-left: 610px;
+    top: -18%;
+    left: 50%;
   }
 
-  .main-block__image {
-    .reset-indents();
-    padding: 0;
+  .main-block__tablet-background {
+    position: absolute;
+    background: url("../img/index-can-desktop@1x.png") no-repeat;
     width: 552px;
     height: 499px;
-    margin-left: 457px;
-    margin-top: -156px;
+    left: 37%;
+    top: 19%;
+  }
+
+  .main-block__button-wrapper {
+    margin: 55px 0 0 170px;
   }
 
   .main-block__button {
-    margin-left: 80px;
-    margin-bottom: 270px;
     width: 244px;
-    margin-top: -210px;
+    padding: 16px 0;
+    margin-bottom: 135px;
   }
 }

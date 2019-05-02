@@ -1,6 +1,5 @@
 .copyright {
-  padding-top: 31px;
-  padding-bottom: 22px;
+  padding: 20px 0;
 }
 
 .copyright__link {
@@ -17,9 +16,15 @@
   color: @main-black;
 }
 
+.copyright__image {
+  width: 27px;
+  height: 34px;
+}
+
 @media (min-width: @tablet-width) {
   .copyright {
     padding: 58px 0;
+    margin: 0 30px;
   }
 
   .copyright__name {
@@ -30,6 +35,6 @@
 @media (min-width: @desktop-width) {
   .copyright {
     padding: 0;
-    .reset-indents();
+    margin-right: 110px;
   }
 }
