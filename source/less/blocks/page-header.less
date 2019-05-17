@@ -16,7 +16,8 @@
 }
 
 .page-header__logo {
-  width: 193px;
+  display: block;
+  margin-right: auto;
 }
 
 .page-header__logo-image {
@@ -36,14 +37,22 @@
     margin-top: 24px;
   }
 
-  .page-header__logo-image {
-    display: none;
+  .page-header__logo {
+    padding: 0;
   }
 
-  .page-header__logo {
-    background: url("/img/logo-tablet.svg") no-repeat;
+  .page-header__logo-image {
     width: 173px;
     height: 58px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -58,14 +67,17 @@
     padding: 0 110px;
   }
 
-  .page-header__logo {
-    background: url("/img/logo-desktop.svg") no-repeat;
-    width: 202px;
-    height: 59px;
-  }
-
   .page-header__logo-image {
     width: 202px;
     height: 59px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
