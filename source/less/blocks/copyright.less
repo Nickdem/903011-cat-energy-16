@@ -14,11 +14,30 @@
   font-size: 16px;
   line-height: 16px;
   color: @main-black;
+
+  &:hover,
+  &:focus {
+    color: @main-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__image {
   width: 27px;
   height: 34px;
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: @main-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
