@@ -1,0 +1,72 @@
+.map {
+  width: 320px;
+  max-height: 359px;
+  overflow: hidden;
+}
+
+.map__iframe {
+  position: relative;
+  z-index: 10;
+  border: none;
+  width: 320px;
+}
+
+.map__image {
+  position: relative;
+  top: -40px;
+  left: 50%;
+  margin-left: -160px;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    position: relative;
+    max-height: 395px;
+    width: 768px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 3;
+      top: 49%;
+      left: 49%;
+      width: 113px;
+      height: 106px;
+      transform: translate(-48%, -49%);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url("../../img/map-pin.png");
+    }
+  }
+
+  .map__iframe {
+    width: 768px;
+  }
+
+  .map__image {
+    top: -9px;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    width: 1440px;
+  }
+
+  .map__iframe {
+    width: 1440px;
+  }
+
+  .map::before {
+    top: 38.3%;
+    left: 69.3%;
+    transform: none;
+  }
+
+  .map__image {
+    top: 0;
+  }
+}

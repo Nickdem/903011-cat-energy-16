@@ -1,0 +1,38 @@
+.programm-list {
+  .reset-list();
+  padding: 0 20px;
+}
+
+.programm-list__item {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.programm-list__label {
+  position: relative;
+  display: block;
+  margin-right: 0;
+  padding-left: 43px;
+}
+
+@media (min-width: @tablet-width) {
+  .programm-list {
+    padding-top: 35px;
+    padding-left: 14%;
+  }
+
+  .programm-list__label {
+    margin-bottom: 33px;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programm-list {
+    .reset-list();
+    border: none;
+  }
+}

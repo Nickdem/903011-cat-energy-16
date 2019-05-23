@@ -1,0 +1,338 @@
+.illustration {
+  padding-bottom: 37px;
+  padding-top: 18px;
+  background-color: @main-grey;
+  max-width: 320px;
+}
+
+.illustration__title {
+  margin-bottom: 22px;
+  padding-left: 20px;
+  font-weight: normal;
+}
+
+.illustration__column--left {
+  padding: 0 20px;
+}
+
+.illustration__description {
+  .reset-indents();
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 25px;
+  padding-right: 14px;
+  font-family: @secondFont;
+}
+
+.illustration__list {
+  position: relative;
+  .reset-list();
+  margin: 0 auto;
+  margin-bottom: 38px;
+  min-height: 232px;
+}
+
+.illustration__item {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -155px;
+  width: 311px;
+
+  &:last-child {
+    display: none;
+  }
+}
+
+.illustration__image {
+  margin-bottom: 35px;
+  width: 311px;
+  height: 232px;
+}
+
+.illustration__numbers {
+  display: flex;
+}
+
+.illustration__numbers-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: 9px;
+  padding: 13px 20px;
+  width: 124px;
+  height: 56px;
+  text-align: center;
+  border-radius: 3px;
+  border: @border;
+
+  &:first-child {
+    margin-right: 11%;
+  }
+}
+
+.illustration__numbers-info {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.illustration__numbers-data {
+  margin-top: 10px;
+  padding: 0 15px;
+  font-family: @secondFont;
+  font-size: 12px;
+  line-height: 12px;
+  color: @main-black;
+  background-color: @main-grey;
+  text-align: center;
+}
+
+.illustration__expenses {
+  margin-bottom: 37px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .illustration {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #ffffff;
+    max-width: 768px;
+  }
+
+  .illustration__title {
+    .indents-tablet();
+    margin-bottom: 64px;
+    font-size: 60px;
+  }
+
+  .illustration__description {
+    margin-bottom: 54px;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .illustration__table {
+    .indents-tablet();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .illustration__numbers {
+    width: 365px;
+  }
+
+  .illustration__column--left {
+    margin-bottom: 75px;
+    padding: 0;
+  }
+
+  .illustration__column--right {
+    position: relative;
+  }
+
+  .illustration__list {
+    display: flex;
+    z-index: 3;
+    margin-bottom: 114px;
+    width: 768px;
+    min-height: 517px;
+  }
+
+  .illustration__item {
+    left: -50%;
+    margin-left: 0;
+    width: 768px;
+    height: 517px;
+    overflow: hidden;
+
+    &:last-child {
+      display: block;
+      left: 50%;
+    }
+  }
+
+  .illustration__image {
+    position: absolute;
+    top: 11px;
+    left: 56%;
+    margin-bottom: 0;
+    width: 690px;
+    height: 517px;
+
+    &--after {
+      left: -44%;
+    }
+  }
+
+  .illustration__numbers-item {
+    margin-bottom: 0;
+    padding: 13px 20px;
+    width: 162px;
+    height: 71px;
+
+    &:first-child {
+      margin-right: 43px;
+    }
+  }
+
+  .illustration__numbers-info {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .illustration__numbers-data {
+    top: 61px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+
+    &--weight {
+      left: 54%;
+      width: 115px;
+    }
+
+    &--time {
+      left: 45%;
+      width: 140px;
+    }
+  }
+
+  .illustration__expenses {
+    margin-bottom: 0;
+    width: 37%;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .illustration__expenses-pay--food {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .illustration__expenses-pay--rubles {
+    display: inline-block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .illustration {
+    padding: 0;
+    max-width: 1440px;
+  }
+
+  .illustration__title {
+    .indents-desktop();
+    margin-bottom: 75px;
+  }
+
+  .illustration__wrapper-background {
+    position: relative;
+    z-index: 5;
+    background: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 73.5%, #eaeaea 73.5%, #eaeaea 100%);
+  }
+
+  .illustration__wrapper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .illustration__column {
+    width: 610px;
+    position: relative;
+    z-index: 5;
+
+    &--left {
+      margin-bottom: 0;
+      padding-left: 110px;
+      padding-top: 63px;
+      padding-bottom: 60px;
+    }
+
+    &--right {
+      padding-top: 63px;
+      position: relative;
+      padding-right: 40px;
+    }
+  }
+
+  .illustration__description {
+    width: 435px;
+    margin-bottom: 67px;
+    padding: 0;
+  }
+
+  .illustration__table {
+    padding: 0;
+    width: 370px;
+  }
+
+  .illustration__list {
+    position: absolute;
+    top: -195px;
+    margin-bottom: 0;
+    width: 677px;
+  }
+
+  .illustration__item {
+    width: 677px;
+    height: 547px;
+
+    &--before {
+      left: -57.5%;
+    }
+
+    &:last-child {
+      left: 42%;
+    }
+  }
+
+  .illustration__image {
+    top: 5px;
+
+    &--before {
+      left: 46%;
+    }
+
+    &--after {
+      left: -53%;
+    }
+  }
+
+  .illustration__numbers {
+    margin-bottom: 62px;
+  }
+
+  .illustration__numbers-data {
+    background-color: @main-grey;
+  }
+
+  .illustration__expenses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 0;
+    width: 325px;
+  }
+
+  .illustration__expenses-pay--food {
+    margin-bottom: 0;
+    width: 177px;
+  }
+
+  .illustration__expenses-pay--rubles {
+    width: 90px;
+  }
+}

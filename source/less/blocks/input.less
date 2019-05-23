@@ -1,0 +1,178 @@
+.input {
+  flex-grow: 1;
+  padding: 13px 13px 12px;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @main-black;
+  vertical-align: middle;
+  font-family: @mainFont;
+
+  &--name {
+    max-width: 198px;
+  }
+
+  &--weight {
+    max-width: 173px;
+  }
+
+  &--age {
+    max-width: 144px;
+  }
+
+  &--mail {
+    max-width: 189px;
+  }
+
+  &--tel {
+    max-width: 172px;
+  }
+
+  &--text {
+    padding: 13px 14px;
+    width: 251px;
+    height: 121px;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus,
+  &:active {
+    border: 2px solid #444444;
+  }
+
+  &:hover ~ .input__icon,
+  &:focus ~ .input__icon,
+  &:active ~ .input__icon {
+    fill: @main-green;
+  }
+
+  &::placeholder {
+    line-height: 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: @main-black;
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
+  }
+}
+
+.input__icon {
+  position: absolute;
+  fill: #666666;
+
+  &--mail {
+    top: 37%;
+    right: 5%;
+    width: 17px;
+    height: 13px;
+  }
+
+  &--tel {
+    top: 30%;
+    right: 4%;
+    width: 20px;
+    height: 20px;
+  }
+
+  &--error {
+    fill: #ff8282;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .input {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &--name {
+      max-width: 530px;
+    }
+
+    &--weight {
+      max-width: 500px;
+    }
+
+    &--age {
+      max-width: 462px;
+    }
+
+    &--mail {
+      padding-top: 9px;
+      padding-bottom: 13px;
+      max-width: 515px;
+    }
+
+    &--tel {
+      padding: 10px 20px 10px 17px;
+      max-width: 495px;
+    }
+
+    &--text {
+      margin: 0 65px 0 69px;
+      width: 590px;
+      height: 147px;
+      padding: 13px 17px;
+    }
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .input__icon--mail {
+    top: 37.5%;
+    right: 2.8%;
+    width: 18px;
+    height: 14px;
+  }
+
+  .input__icon--tel {
+    top: 33%;
+    right: 2.5%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input {
+    font-size: 20px;
+    line-height: 20px;
+
+    &--name {
+      max-width: 470px;
+    }
+
+    &--weight {
+      max-width: 500px;
+    }
+
+    &--age {
+      max-width: 462px;
+    }
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &--text {
+      width: 1180px;
+      margin: 0 110px;
+    }
+  }
+
+  .input__icon--mail {
+    right: 3.8%;
+  }
+
+  .input__icon--tel {
+    right: 3%;
+  }
+}

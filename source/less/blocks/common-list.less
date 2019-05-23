@@ -1,0 +1,40 @@
+.common-list {
+  margin-bottom: 21px;
+}
+
+.common-list__item {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .common-list {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .common-list__item {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .common-list__label:nth-child(2) {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .common-list {
+    margin-bottom: 0;
+  }
+
+  .common-list__item {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}

@@ -16,7 +16,7 @@
       <div class="page-header__wrapper">
         <a class="logo page-header__logo">
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
           </picture>
@@ -48,10 +48,10 @@
         <div class="main-block__desktop-background"></div>
         <div class="main-block__wrapper-image">
           <picture>
-            <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
-            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, index-can-desktop@2x.png 2x">
+            <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, index-can-tablet@2x.jpg 2x">
             <img class="main-block__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Пример продукта">
           </picture>
@@ -100,7 +100,86 @@
         </ul>
       </section>
 
-      <!-- Тут будет сектор живого примера и карта -->
+      <section class="illustration container">
+        <h2 class="illustration__title main-title container">Живой пример</h2>
+        <div class="illustration__wrapper-background">
+          <div class="illustration__wrapper-container container">
+            <div class="illustration__column illustration__column--left">
+              <p class="illustration__description">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </p>
+              <div class="illustration__table">
+                <div class="illustration__numbers">
+                  <div class="illustration__numbers-item">
+                    <h3 class="illustration__numbers-info illustration__numbers-info--kilo">5 кг</h3>
+                    <p class="illustration__numbers-data illustration__numbers-data--weight">снижение веса</p>
+                  </div>
+                  <div class="illustration__numbers-item">
+                    <h3 class="illustration__numbers-info illustration__numbers-info--days">60 дней</h3>
+                    <p class="illustration__numbers-data illustration__numbers-data--time">затрачено времени</p>
+                  </div>
+                </div>
+                <div class="illustration__expenses">
+                  <span class="illustration__expenses-pay illustration__expenses-pay--food">Затраты на питание:</span>
+                  <span class="illustration__expenses-pay illustration__expenses-pay--rubles">15 000 руб.</span>
+                </div>
+              </div>
+            </div>
+            <div class="illustration__column illustration__column--right">
+              <ul class="illustration__list">
+                <li class="illustration__item illustration__item--before">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                    <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                    <img class="illustration__image illustration__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Изображение толстого кота до перехода на наше питание">
+                  </picture>
+                </li>
+                <li class="illustration__item illustration__item--after">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                    <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                    <img class="illustration__image illustration__image--after" src="img/after-mobile@1x.png" srcset="img/after-tablet@2x.png 2x" alt="Изображение стройного кота на нашем питании">
+                  </picture>
+                </li>
+              </ul>
+              <div class="illustration__toggles illustration-toggles">
+                <button class="illustration-toggles__button illustration-toggles__button--left">Было</button>
+                <div class="illustration-toggles__bar">
+                  <div class="illustration-toggles__slider"></div>
+                </div>
+                <button class="illustration-toggles__button illustration-toggles__button--right">Стало</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts-container">
+        <div class="contacts container">
+            <h2 class="contacts__title">приглашаем<br> к сотрудничеству дилеров!</h2>
+            <address class="contacts__address">
+              <span>ул. Большая Конюшенная, д. 19/8</span>
+              <span>Санкт-Петербург</span>
+            </address>
+        </div>
+        <div class="map  container">
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6042731120367!2d30.322060345649795!3d59.93870842034729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556036959876!5m2!1sru!2sru" width="600" height="450" allowfullscreen></iframe>
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Наш адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
+        </div>
+      </section>
 
     </main>
 
