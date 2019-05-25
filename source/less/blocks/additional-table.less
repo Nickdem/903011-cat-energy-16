@@ -59,14 +59,12 @@
 @media (min-width: @tablet-width) {
   .additional-table {
     width: 100%;
-    border-collapse: collapse;
   }
 
   .additional-table__row {
-    padding: 25px 35px;
-    padding-top: 24px;
-    border-bottom: none;
-    border: 1px solid rgba(205, 205, 205, 0.5);
+    margin: 0 30px;
+    padding: 26px 40px;
+    border: @border;
   }
 
   .additional-table__cell {
@@ -101,13 +99,14 @@
 
 @media (min-width: @desktop-width) {
   .additional-table {
-    width: 901px;
+    width: 895px;
     min-height: 290px;
   }
 
   .additional-table__row {
     align-items: baseline;
-    padding: 15px 0 13px;
+    padding: 15px 0 15px;
+    margin: 0;
     border-left: none;
     border-right: none;
   }
