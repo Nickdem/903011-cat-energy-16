@@ -1,0 +1,130 @@
+.additional-product {
+  max-width: 320px;
+  padding-top: 28px;
+}
+
+.additional-product__wrapper {
+  margin-right: 16px;
+  margin-left: 18px;
+  border-top: @border;
+}
+
+.additional-product__offer {
+  margin: 40px 0 35px 0;
+  background-color: @main-green;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: contain;
+  background-image: url("../img/gift-photo-mobile@1x.webp");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.webp");
+  }
+}
+
+.additional-product__offer-text {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 187px;
+  padding-bottom: 43px;
+  width: 161px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    margin-left: -29px;
+    width: 56px;
+    height: 61px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additional-product {
+    max-width: 768px;
+    padding-top: 0;
+  }
+
+  .additional-product__wrapper {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #111111;
+    border-top: none;
+    min-height: 290px;
+  }
+
+  .additional-product__offer {
+    margin-top: 70px;
+    margin-bottom: 74px;
+    min-height: 200px;
+    background-size: contain;
+    background-image: url("../img/gift-photo-tablet@1x.webp");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.webp");
+    }
+  }
+
+  .additional-product__offer-text {
+    margin: 0;
+    margin-left: 59.8%;
+    padding-top: 72px;
+    padding-bottom: 70px;
+    width: 24%;
+    text-align: left;
+
+    &::before {
+      top: 65px;
+      left: -179%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-product {
+    margin-bottom: 85px;
+    max-width: 1440px;
+  }
+
+  .additional-product__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .indents-desktop();
+    margin: 0 auto;
+  }
+
+  .additional-product__offer {
+    margin: 0;
+    width: 245px;
+    background-image: url("../img/gift-photo-desktop@1x.webp");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.webp");
+    }
+  }
+
+  .additional-product__offer-text {
+    margin: 0 auto;
+    padding-top: 185px;
+    padding-bottom: 45px;
+    width: 170px;
+    text-align: center;
+
+    &::before {
+      left: 50%;
+      margin-left: -29px;
+    }
+  }
+}
