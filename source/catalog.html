@@ -18,7 +18,7 @@
 
     <header class="page-header container">
       <div class="page-header__wrapper">
-        <a class="logo page-header__logo">
+        <a class="logo page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -48,6 +48,7 @@
         <h2 class="catalog__title">Каталог продукции</h2>
         <div class="catalog__wrapper">
           <div class="catalog__product">
+            <a name="pro"></a>
             <div class="catalog__product-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
@@ -73,7 +74,7 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="catalog__product-order button">Заказать</a>
+            <a href="#openModal" class="catalog__product-order button">Заказать</a>
           </div>
           <div class="catalog__product">
             <div class="catalog__product-wrapper">
@@ -101,7 +102,7 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="catalog__product-order button">Заказать</a>
+            <a href="#openModal" class="catalog__product-order button">Заказать</a>
           </div>
           <div class="catalog__product">
             <div class="catalog__product-wrapper">
@@ -129,7 +130,7 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="catalog__product-order button">Заказать</a>
+            <a href="#openModal" class="catalog__product-order button">Заказать</a>
           </div>
           <div class="catalog__product">
             <div class="catalog__product-wrapper">
@@ -157,9 +158,10 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="catalog__product-order button">Заказать</a>
+            <a href="#openModal" class="catalog__product-order button">Заказать</a>
           </div>
           <div class="catalog__product">
+            <a name="slim"></a>
             <div class="catalog__product-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
@@ -185,7 +187,7 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="catalog__product-order button">Заказать</a>
+            <a href="#openModal" class="catalog__product-order button">Заказать</a>
           </div>
           <div class="catalog__product">
             <div class="catalog__product-wrapper">
@@ -213,7 +215,7 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="catalog__product-order button">Заказать</a>
+            <a href="#openModal" class="catalog__product-order button">Заказать</a>
           </div>
           <div class="catalog__product">
             <div class="catalog__product-wrapper">
@@ -241,7 +243,7 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="catalog__product-order button">Заказать</a>
+            <a href="#openModal" class="catalog__product-order button">Заказать</a>
           </div>
           <div class="catalog__product show-more">
             <div class="show-more__image-wrapper">
@@ -250,6 +252,19 @@
             <h4 class="show-more__title">Показать еще 100500 товаров</h4>
             <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
             <a href="#" class="show-more__button button">Показать все</a>
+          </div>
+        </div>
+        <div id="openModal" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Заказ сбалансированного питания для кота</h3>
+                <a href="#close" title="Close" class="close">Закрыть</a>
+              </div>
+              <div class="modal-body">
+                <p>Содержимое модального окна...</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
